@@ -61,4 +61,6 @@ class MainWindow(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
+    window.setObjectName("MainWindow")
+    window.setStyleSheet("#MainWindow{background-color:purple}")
     sys.exit(app.exec_())

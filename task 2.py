@@ -3,7 +3,6 @@
 
 import sys
 from PySide2.QtWidgets import QWidget, QApplication, QLabel, QPushButton, QLineEdit, QVBoxLayout
-
 """
 Напишите программу, состоящую из семи кнопок, цвета которых соответствуют цветам радуги. 
 При нажатии на ту или иную кнопку в текстовое поле должен вставляться код цвета, а в метку – название цвета.
@@ -100,4 +99,6 @@ if __name__ == "__main__":
     window = MainWindow()
     window.vertical_box()
     window.show()
+    window.setObjectName("MainWindow")
+    window.setStyleSheet("#MainWindow{background-color:purple}")
     sys.exit(app.exec_())

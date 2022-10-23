@@ -40,7 +40,7 @@ class MainWindow(QWidget):
                 f.write(text)
 
     def open(self):
-        self.text_edit.clear()
+        self.text.clear()
         name = QFileDialog.getOpenFileName()
         with open(name[0], 'r', encoding="utf-8") as f:
             data = f.read()

@@ -94,4 +94,6 @@ if __name__ == "__main__":
     window = MainWindow()
     window.widgets()
     window.show()
+    window.setObjectName("MainWindow")
+    window.setStyleSheet("#MainWindow{background-color:purple}")
     sys.exit(app.exec_())
